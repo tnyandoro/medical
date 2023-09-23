@@ -1,6 +1,13 @@
 Rails.application.routes.draw do
-  devise_for :users
   resources :patients
+
+  # config/routes.rb
+
+  devise_for :users, controllers: {
+  registrations: 'users/registrations',
+  sessions: 'users/sessions'
+}
+
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
   # Defines the root path route ("/")
