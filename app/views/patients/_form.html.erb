@@ -1,0 +1,132 @@
+<%= form_with(model: patient) do |form| %>
+  <% if patient.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(patient.errors.count, "error") %> prohibited this patient from being saved:</h2>
+
+      <ul>
+        <% patient.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :first_name, style: "display: block" %>
+    <%= form.text_field :first_name %>
+  </div>
+
+  <div>
+    <%= form.label :last_name, style: "display: block" %>
+    <%= form.text_field :last_name %>
+  </div>
+
+  <div>
+    <%= form.label :dob, style: "display: block" %>
+    <%= form.date_field :dob %>
+  </div>
+
+  <div>
+    <%= form.label :gender, style: "display: block" %>
+    <%= form.text_field :gender %>
+  </div>
+
+  <div>
+    <%= form.label :race, style: "display: block" %>
+    <%= form.text_field :race %>
+  </div>
+
+  <div>
+    <%= form.label :address, style: "display: block" %>
+    <%= form.text_field :address %>
+  </div>
+
+  <div>
+    <%= form.label :phone_number, style: "display: block" %>
+    <%= form.text_field :phone_number %>
+  </div>
+
+  <div>
+    <%= form.label :underlying_conditions, style: "display: block" %>
+    <%= form.text_area :underlying_conditions %>
+  </div>
+
+  <div>
+    <%= form.label :vaccination_history, style: "display: block" %>
+    <%= form.text_area :vaccination_history %>
+  </div>
+
+  <div>
+    <%= form.label :bp, style: "display: block" %>
+    <%= form.text_field :bp %>
+  </div>
+
+  <div>
+    <%= form.label :urine_sample, style: "display: block" %>
+    <%= form.text_field :urine_sample %>
+  </div>
+
+  <div>
+    <%= form.label :temp, style: "display: block" %>
+    <%= form.text_field :temp %>
+  </div>
+
+  <div>
+    <%= form.label :cardio, style: "display: block" %>
+    <%= form.text_field :cardio %>
+  </div>
+
+  <div>
+    <%= form.label :weight, style: "display: block" %>
+    <%= form.text_field :weight %>
+  </div>
+
+  <div>
+    <%= form.label :height, style: "display: block" %>
+    <%= form.text_field :height %>
+  </div>
+
+  <div>
+    <%= form.label :allergies, style: "display: block" %>
+    <%= form.text_area :allergies %>
+  </div>
+
+  <div>
+    <%= form.label :medical_allergies, style: "display: block" %>
+    <%= form.text_area :medical_allergies %>
+  </div>
+
+  <div>
+    <%= form.label :female, style: "display: block" %>
+    <%= form.check_box :female %>
+  </div>
+
+  <div>
+    <%= form.label :number_of_children, style: "display: block" %>
+    <%= form.number_field :number_of_children %>
+  </div>
+
+  <div>
+    <%= form.label :marital_status, style: "display: block" %>
+    <%= form.text_field :marital_status %>
+  </div>
+
+  <div>
+    <%= form.label :next_of_kin, style: "display: block" %>
+    <%= form.text_field :next_of_kin %>
+  </div>
+
+  <div>
+    <%= form.label :scan_results, style: "display: block" %>
+    <%= form.text_area :scan_results %>
+  </div>
+
+  <div>
+    <%= form.label :id, style: "display: block" %>
+    <%= form.text_field :id %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>

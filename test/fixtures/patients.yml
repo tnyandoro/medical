@@ -1,0 +1,51 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  first_name: MyString
+  last_name: MyString
+  dob: 2023-09-23
+  gender: MyString
+  race: MyString
+  address: MyString
+  phone_number: MyString
+  underlying_conditions: MyText
+  vaccination_history: MyText
+  bp: MyString
+  urine_sample: MyString
+  temp: MyString
+  cardio: MyString
+  weight: MyString
+  height: MyString
+  allergies: MyText
+  medical_allergies: MyText
+  female: false
+  number_of_children: 1
+  marital_status: MyString
+  next_of_kin: MyString
+  scan_results: MyText
+  id: 
+
+two:
+  first_name: MyString
+  last_name: MyString
+  dob: 2023-09-23
+  gender: MyString
+  race: MyString
+  address: MyString
+  phone_number: MyString
+  underlying_conditions: MyText
+  vaccination_history: MyText
+  bp: MyString
+  urine_sample: MyString
+  temp: MyString
+  cardio: MyString
+  weight: MyString
+  height: MyString
+  allergies: MyText
+  medical_allergies: MyText
+  female: false
+  number_of_children: 1
+  marital_status: MyString
+  next_of_kin: MyString
+  scan_results: MyText
+  id: 
